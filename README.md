@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+## R 語言及其應用
 
-You can use the [editor on GitHub](https://github.com/yaojenkuo/rprg_iii/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### 簡介
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言及其應用課程網頁，課程時數 24 小時。
 
-### Markdown
+### 課堂互動工具（Event Code: S725）
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<https://www.sli.do/>
 
-```markdown
-Syntax highlighted code block
+### 互動練習
 
-# Header 1
-## Header 2
-### Header 3
+- [R 語言導論](https://www.datacamp.com/community/open-courses/r-%E8%AA%9E%E8%A8%80%E5%B0%8E%E8%AB%96?tap_a=5644-dce66f&tap_s=194899-1fb421)
+- [資料框整理技巧](https://www.datacamp.com/community/open-courses/%E8%B3%87%E6%96%99%E6%A1%86%E6%95%B4%E7%90%86%E6%8A%80%E5%B7%A7?tap_a=5644-dce66f&tap_s=194899-1fb421)
 
-- Bulleted
-- List
+### 延伸閱讀
 
-1. Numbered
-2. List
+- [輕鬆學習 R 語言 - 紙本書](http://www.books.com.tw/products/0010763975)
+- [Datainpoint](https://medium.com/datainpoint)
+- [Advanced R（Website）](http://adv-r.had.co.nz/)
 
-**Bold** and _Italic_ and `Code` text
+### 課程投影片（html）
 
-[Link](url) and ![Image](src)
-```
+- [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started/)
+- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types/)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 課程投影片（pdf）
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yaojenkuo/rprg_iii/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started.pdf)
+- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types.pdf)
