@@ -69,6 +69,7 @@ my_lucky_complex
 |`-`|minus|
 |`*`|multiply|
 |`/`|divide|
+|`**` or `^`|power|
 |`%%`|modulo|
 |`%/%`|quotient|
 
