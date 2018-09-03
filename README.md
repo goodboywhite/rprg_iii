@@ -11,12 +11,14 @@
 ### 課程投影片（html）
 
 - [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started#/)
-- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types#/)
+- [Variable Types in R](https://yaojenkuo.io/rprg_iii/var_types#/)
+- [Data Structures in R](https://yaojenkuo.io/rprg_iii/data_structures#/)
 
 ### 課程投影片（pdf）
 
 - [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started.pdf)
-- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types.pdf)
+- [Variable Types in R](https://yaojenkuo.io/rprg_iii/var_types.pdf)
+- [Data Structures in R](https://yaojenkuo.io/rprg_iii/data_structures.pdf)
 
 ### 互動練習
 
