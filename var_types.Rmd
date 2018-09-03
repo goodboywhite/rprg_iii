@@ -1,7 +1,12 @@
 ---
 title: "Variable Types in R"
 author: "Tony Yao-Jen Kuo"
-output: beamer_presentation
+output:
+  revealjs::revealjs_presentation:
+    highlight: pygments
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
 ---
 
 ```{r include=FALSE}
