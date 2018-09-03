@@ -686,6 +686,20 @@ Shaquille O<span class="st">'Neal</span></code></pre></div>
 </section><section id="comparing-characters" class="slide level2">
 <h2>Comparing characters</h2>
 <p><code>&quot;Z&quot; &gt; &quot;z&quot; &gt; &quot;Y&quot; &gt; &quot;y&quot; &gt; &quot;X&quot; &gt; &quot;x&quot; ... &gt; &quot;B&quot; &gt; &quot;b&quot; &gt; &quot;A&quot; &gt; &quot;a&quot;</code></p>
+</section><section id="connecting-logicals" class="slide level2">
+<h2>Connecting logicals</h2>
+<ul>
+<li><code>&amp;</code> for logical AND</li>
+<li><code>|</code> for logical OR</li>
+</ul>
+</section><section id="is-shaq-overweight" class="slide level2">
+<h2>Is Shaq overweight?</h2>
+<ul>
+<li>Well, that depends on the definition of overweight</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Overweight: BMI &gt; 30 AND body fat &gt; 25%</span>
+
+<span class="co"># Overweight: BMI &gt; 30 OR body fat &gt; 25%</span></code></pre></div>
 </section><section id="using-logicals-in-control-statements" class="slide level2">
 <h2>Using logicals in control statements</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># 1 branch</span>
@@ -718,7 +732,21 @@ Shaquille O<span class="st">'Neal</span></code></pre></div>
 }
 <span class="kw">get_bmi_label</span>(<span class="st">&quot;Jeremy Lin&quot;</span>, <span class="dv">191</span>, <span class="dv">91</span>)
 <span class="co"># [1] &quot;Jeremy Lin's BMI label is Normal&quot;</span></code></pre></div>
-<pre><code>## NULL</code></pre>
+</section><section id="practices-fizz_buzz" class="slide level2">
+<h2>Practices: <code>fizz_buzz()</code></h2>
+<ul>
+<li>if input can be divided by 3, return “fizz”</li>
+<li>if input can be divided by 5, return “buzz”</li>
+<li>if input can be divided by 15, return “fizz buzz”</li>
+<li>otherwise, return input itself</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fizz_buzz &lt;-<span class="st"> </span><span class="cf">function</span>(x) {
+  <span class="co"># ...</span>
+}
+<span class="kw">fizz_buzz</span>(<span class="dv">6</span>)  <span class="co"># [1] &quot;fizz&quot;</span>
+<span class="kw">fizz_buzz</span>(<span class="dv">10</span>) <span class="co"># [1] &quot;buzz&quot;</span>
+<span class="kw">fizz_buzz</span>(<span class="dv">30</span>) <span class="co"># [1] &quot;fizz buzz&quot;</span>
+<span class="kw">fizz_buzz</span>(<span class="dv">31</span>) <span class="co"># [1] 31</span></code></pre></div>
 </section></section>
 <section><section id="class-judgement-and-class-conversion" class="titleslide slide level1"><h1>Class judgement and class conversion</h1></section><section id="using-is.___-for-judgement" class="slide level2">
 <h2>Using <code>is.___()</code> for judgement</h2>
@@ -760,7 +788,7 @@ original_date <span class="op">+</span><span class="st"> </span><span class="dv"
 </section><section id="using-sys.time-for-current-datetime" class="slide level2">
 <h2>Using <code>Sys.time()</code> for current datetime</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">Sys.time</span>()</code></pre></div>
-<pre><code>## [1] &quot;2018-09-03 11:27:57 CST&quot;</code></pre>
+<pre><code>## [1] &quot;2018-09-03 23:03:48 CST&quot;</code></pre>
 </section><section id="datetime-originates-from-1970-01-01-080000" class="slide level2">
 <h2>Datetime originates from 1970-01-01 08:00:00</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sys_datetime &lt;-<span class="st"> </span><span class="kw">Sys.time</span>()

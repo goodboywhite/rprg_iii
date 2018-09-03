@@ -1,12 +1,7 @@
 ---
 title: "Variable Types in R"
 author: "Tony Yao-Jen Kuo"
-output: 
-  revealjs::revealjs_presentation:
-    highlight: pygments
-    reveal_options:
-      slideNumber: true
-      previewLinks: true
+output: beamer_presentation
 ---
 
 ```{r include=FALSE}
@@ -177,6 +172,22 @@ class(false) # error
 
 `"Z" > "z" > "Y" > "y" > "X" > "x" ... > "B" > "b" > "A" > "a"`
 
+## Connecting logicals
+
+- `&` for logical AND
+- `|` for logical OR
+
+## Is Shaq overweight?
+
+- Well, that depends on the definition of overweight
+
+```{r}
+# Overweight: BMI > 30 AND body fat > 25%
+
+# Overweight: BMI > 30 OR body fat > 25%
+
+```
+
 ## Using logicals in control statements
 
 ```{r eval=FALSE}
@@ -214,12 +225,29 @@ if (CONDITION_1) {
 
 <https://en.wikipedia.org/wiki/Body_mass_index>
 
-```{r}
+```{r eval=FALSE}
 get_bmi_label <- function(player_name, height, weight) {
   # ...
 }
 get_bmi_label("Jeremy Lin", 191, 91)
 # [1] "Jeremy Lin's BMI label is Normal"
+```
+
+## Practices: `fizz_buzz()`
+
+- if input can be divided by 3, return "fizz"
+- if input can be divided by 5, return "buzz"
+- if input can be divided by 15, return "fizz buzz"
+- otherwise, return input itself
+
+```{r eval=FALSE}
+fizz_buzz <- function(x) {
+  # ...
+}
+fizz_buzz(6)  # [1] "fizz"
+fizz_buzz(10) # [1] "buzz"
+fizz_buzz(30) # [1] "fizz buzz"
+fizz_buzz(31) # [1] 31
 ```
 
 # Class judgement and class conversion
