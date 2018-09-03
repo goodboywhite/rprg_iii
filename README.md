@@ -8,6 +8,16 @@
 
 <https://www.sli.do/>
 
+### 課程投影片（html）
+
+- [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started#/)
+- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types#/)
+
+### 課程投影片（pdf）
+
+- [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started.pdf)
+- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types.pdf)
+
 ### 互動練習
 
 - [R 語言導論](https://www.datacamp.com/community/open-courses/r-%E8%AA%9E%E8%A8%80%E5%B0%8E%E8%AB%96?tap_a=5644-dce66f&tap_s=194899-1fb421)
@@ -18,13 +28,3 @@
 - [輕鬆學習 R 語言 - 紙本書](http://www.books.com.tw/products/0010763975)
 - [Datainpoint](https://medium.com/datainpoint)
 - [Advanced R（Website）](http://adv-r.had.co.nz/)
-
-### 課程投影片（html）
-
-- [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started/)
-- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types/)
-
-### 課程投影片（pdf）
-
-- [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started.pdf)
-- [Variable Types](https://yaojenkuo.io/rprg_iii/var_types.pdf)
