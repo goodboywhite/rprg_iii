@@ -147,6 +147,16 @@ jordan_BMI <- get_bmi(jordan_height, jordan_weight)
 sprintf("Michael Jordan's BMI is %s", jordan_BMI)
 ```
 
+## Common formats using `sprintf()`
+
+- `%s`: pure text
+- `%f`: float
+- `%e`: scientific notation
+
+```{r eval=FALSE}
+?sprintf # this function is well-documented!
+```
+
 # logical
 
 ## Black or White, Head or Tail

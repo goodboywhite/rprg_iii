@@ -630,6 +630,14 @@ Shaquille O<span class="st">'Neal</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">jordan_BMI &lt;-<span class="st"> </span><span class="kw">get_bmi</span>(jordan_height, jordan_weight)
 <span class="kw">sprintf</span>(<span class="st">&quot;Michael Jordan's BMI is %s&quot;</span>, jordan_BMI)</code></pre></div>
 <pre><code>## [1] &quot;Michael Jordan's BMI is 24.9974492398735&quot;</code></pre>
+</section><section id="common-formats-using-sprintf" class="slide level2">
+<h2>Common formats using <code>sprintf()</code></h2>
+<ul>
+<li><code>%s</code>: pure text</li>
+<li><code>%f</code>: float</li>
+<li><code>%e</code>: scientific notation</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">?sprintf <span class="co"># this function is well-documented!</span></code></pre></div>
 </section></section>
 <section><section id="logical" class="titleslide slide level1"><h1>logical</h1></section><section id="black-or-white-head-or-tail" class="slide level2">
 <h2>Black or White, Head or Tail</h2>
@@ -788,7 +796,7 @@ original_date <span class="op">+</span><span class="st"> </span><span class="dv"
 </section><section id="using-sys.time-for-current-datetime" class="slide level2">
 <h2>Using <code>Sys.time()</code> for current datetime</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">Sys.time</span>()</code></pre></div>
-<pre><code>## [1] &quot;2018-09-04 01:16:02 CST&quot;</code></pre>
+<pre><code>## [1] &quot;2018-09-04 09:36:37 CST&quot;</code></pre>
 </section><section id="datetime-originates-from-1970-01-01-080000" class="slide level2">
 <h2>Datetime originates from 1970-01-01 08:00:00</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sys_datetime &lt;-<span class="st"> </span><span class="kw">Sys.time</span>()
