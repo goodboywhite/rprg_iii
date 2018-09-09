@@ -1,7 +1,7 @@
 ---
 title: "Data Structures in R"
 author: "Tony Yao-Jen Kuo"
-output: 
+output:
   revealjs::revealjs_presentation:
     highlight: pygments
     reveal_options:
@@ -14,6 +14,13 @@ knitr::opts_chunk$set(results = "hold")
 ```
 
 # An overview
+
+## Data structures...
+
+>- collects scalars
+>- can be indexing
+>- can be slicing
+>- are iterable
 
 ## We are gonna talk about 6 of them
 
@@ -31,7 +38,6 @@ knitr::opts_chunk$set(results = "hold")
 >- element-wise operation
 >- uniformed class
 >- supports logical filtering
->- iterable
 
 ## Why is there always a `[1]` before printed scalar?
 
@@ -132,7 +138,7 @@ random_numbers <- sample(1:500, size = 100, replace = FALSE)
 
 ```{r eval=FALSE}
 for (ITERATOR in ITERABLE) {
-  # do something iteratively
+  # do something iteratively until ITERATOR hits the end of ITERABLE
 }
 ```
 
@@ -144,6 +150,29 @@ for (ph in player_heights) {
   print(ph*0.01)
 }
 ```
+
+## Not just printing it out...
+
+```{r}
+player_heights <- c(191, 198, 216)
+player_heights_m <- c()
+for (ph in player_heights) {
+  player_heights_m <- c(player_heights_m, ph*0.01)
+}
+player_heights_m
+```
+
+## Practices: Applying `fizz_buzz()` on 1:100
+
+- if input can be divided by 3, return "fizz"
+- if input can be divided by 5, return "buzz"
+- if input can be divided by 15, return "fizz buzz"
+- otherwise, return input itself
+
+```{r}
+## [1] 1 2 "fizz" 4 "buzz" ... 14 "fizz buzz" 16 ... 99 "buzz"
+```
+
 ## Iterators as indice
 
 ```{r}
@@ -153,6 +182,22 @@ for (i in 1:length(player_names)) {
   player_height_m <- player_heights[i]/100
   print(sprintf("%s is %s meter tall", player_names[i], player_height_m))
 }
+```
+
+## Practices: Is x a prime?
+
+```{r eval=FALSE}
+is_prime(87) ## FALSE
+is_prime(89) ## TRUE
+is_prime(91) ## FALSE
+```
+
+## Practices: How many primes are there between x and y?
+
+```{r eval=FALSE}
+count_primes(5, 11) ## 3
+count_primes(5, 13) ## 4
+count_primes(5, 15) ## 4
 ```
 
 ## Iterate with another style
@@ -174,13 +219,33 @@ while (i <= length(player_names)) {
 }
 ```
 
+## Practices: How many times do I have to flip a coin to get 6 heads?
+
+## `for` is necessary condition for `while`
+
+## Practices: Fibonacci
+
+- Try using 2 types of loop to generate a certain fibonacci array.
+
+```{r eval=FALSE}
+fibonacci(0, 1, 5) ## [1] 0, 1, 1, 2, 3
+fibonacci(0, 1, 7) ## [1] 0, 1, 1, 2, 3, 5, 8
+fibonacci(0, 1, 9) ## [1] 0, 1, 1, 2, 3, 5, 8, 13, 21
+```
+
+## Practices: Poker card deck
+
+```{r}
+suits <- c("Spade", "Heart", "Diamond", "Clover")
+ranks <- c("Ace", 2:10, "Jack", "Queen", "King")
+```
+
 # Lists
 
 ## Characteristics of lists
 
 >- Different classes
 >- Supports `$` selection like attributes
->- Iterable
 
 ## Using `list()` to create a list
 
@@ -254,7 +319,65 @@ fav_players <- c("Steve Nash", "Paul Pierce", "Dirk Nowitzki", "Kevin Garnett", 
 # [1] "NASH" "PIERCE" "NOWITZKI" "GARNETT" "OLAJUWON"
 ```
 
-# Factors
+# (optional)Factors
+
+## Characteristics of factors
+
+>- Acts like a character vector
+>- Unique character is recorded as **Levels**
+>- Supports ordinal values and each character is encoded as **integers**
+>- Default class of a character column
+
+## Using `factor()` to create a factor
+
+```{r}
+all_time_fantasy <- c("Steve Nash", "Paul Pierce", "Dirk Nowitzki", "Kevin Garnett", "Hakeem Olajuwon")
+class(all_time_fantasy)
+all_time_fantasy <- factor(all_time_fantasy)
+class(all_time_fantasy)
+```
+
+## Unique character in factor is recorded with levels
+
+```{r}
+rgbs <- factor(c("red", "green", "blue", "blue", "green", "green"))
+rgbs
+```
+
+## Supports ordinal values
+
+```{r}
+temperatures <- factor(c("freezing", "cold", "cool", "warm", "hot"),
+                       ordered = TRUE)
+temperatures
+temperatures[1] > temperatures[3]
+```
+
+## Adjusting the order of a factor
+
+```{r}
+temperatures <- factor(c("freezing", "cold", "cool", "warm", "hot"),
+                       ordered = TRUE,
+                       levels = c("freezing", "cold", "cool", "warm", "hot"))
+temperatures
+```
+
+## Elements in factor are encoded as integers
+
+```{r eval=FALSE}
+temperatures <- c("freezing", "cold", "cool", "warm", "hot")
+as.numeric(temperatures) # Error
+temperatures <- factor(c("freezing", "cold", "cool", "warm", "hot"))
+as.numeric(temperatures)
+```
+
+## Factors sometimes are hard to handle...
+
+```{r}
+all_time_fantasy <- factor(c("Steve Nash", "Paul Pierce", "Dirk Nowitzki", "Kevin Garnett", "Hakeem Olajuwon"))
+all_time_fantasy <- c(all_time_fantasy, "Ray Allen")
+all_time_fantasy
+```
 
 # Data Frames
 
@@ -262,4 +385,110 @@ fav_players <- c("Steve Nash", "Paul Pierce", "Dirk Nowitzki", "Kevin Garnett", 
 
 >- Has 2 dimensions `m x n` as in `rows x columns`
 >- Rows are denoted as observations, while columns are denoted as variables
->- Different classes 
+>- Each column has its own class
+>- Supports `$` selection like attributes
+
+## Using `data.frame()` to create a data frame
+
+```{r}
+player_names <- c("Jeremy Lin", "Michael Jordan", "Shaquille O'Neal")
+player_heights <- c(191, 198, 216)
+player_weights <- c(91, 98, 148)
+has_rings <- c(FALSE, TRUE, TRUE)
+player_df <- data.frame(player_names, player_heights, player_weights, has_rings)
+```
+
+```{r echo=FALSE}
+knitr::kable(player_df)
+```
+
+## Character vectors are encoded as factors by default
+
+```{r}
+str(player_df)
+```
+
+## Using `stringsAsFactors = FALSE` for character class
+
+```{r}
+player_df <- data.frame(player_names, player_heights, player_weights, has_rings, stringsAsFactors = FALSE)
+str(player_df)
+```
+
+## Selecting column from data frames as a vector
+
+- Using column names in double quotes
+- or column indice
+
+```{r}
+player_df[["player_names"]]
+player_df[, "player_names"]
+player_df[, 1]
+```
+
+## Or using `$` like attributes
+
+```{r}
+player_df$player_names
+```
+
+## Subsetting observations from data frames
+
+- Using row indice
+
+```{r}
+player_df[c(2, 3), ]
+```
+
+## More commonly, using a logical vector
+
+```{r}
+player_df[player_df$has_rings, ]  # players with rings
+player_df[!player_df$has_rings, ] # players without rings
+```
+
+## Creating logical vectors using operators
+
+- Remember putting logical vector at the **row** index
+
+```{r}
+player_df$player_heights > 200
+player_df[player_df$player_heights > 200, ]
+```
+
+# (Optional) Matrix
+
+## Creating a matrix using `matrix()`
+
+```{r}
+my_mat <- matrix(1:4, nrow = 2)
+class(my_mat)
+```
+
+## matrix operations
+
+- Using `*` for element-wise multiplication
+- Using `t` for transpose
+- Using `%*%` for matrix multiplication
+
+```{r}
+my_mat <- matrix(1:4)
+my_mat * my_mat
+t(my_mat) %*% my_mat
+```
+
+## Practices: Make a 9 x 9 multiplication matrix
+
+```{r echo=FALSE}
+vec <- matrix(1:9)
+vec %*% t(vec)
+```
+
+# (Optional) Array
+
+## Using `array()` to create an array
+
+```{r}
+my_arr <- array(1:24, dim = c(4, 3, 2))
+my_arr
+```
