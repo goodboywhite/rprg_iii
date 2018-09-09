@@ -13,12 +13,16 @@
 - [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started#/)
 - [Variable Types in R](https://yaojenkuo.io/rprg_iii/var_types#/)
 - [Data Structures in R](https://yaojenkuo.io/rprg_iii/data_structures#/)
+- [Getting Data with R](https://yaojenkuo.io/rprg_iii/getting_data#/)
+- [Exploring Data with R](https://yaojenkuo.io/rprg_iii/exploring_data#/)
 
 ### 課程投影片（pdf）
 
 - [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started.pdf)
 - [Variable Types in R](https://yaojenkuo.io/rprg_iii/var_types.pdf)
 - [Data Structures in R](https://yaojenkuo.io/rprg_iii/data_structures.pdf)
+- [Getting Data with R](https://yaojenkuo.io/rprg_iii/getting_data.pdf)
+- [Exploring Data with R](https://yaojenkuo.io/rprg_iii/exploring_data.pdf)
 
 ### 互動練習
 
