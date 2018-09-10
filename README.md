@@ -14,9 +14,9 @@
 - [Variable Types in R](https://yaojenkuo.io/rprg_iii/var_types#/)
 - [Data Structures in R](https://yaojenkuo.io/rprg_iii/data_structures#/)
 - [Getting Data with R](https://yaojenkuo.io/rprg_iii/getting_data#/)
-- [Project: Programming with R](https://yaojenkuo.io/rprg_iii/proj_prgwr#/)
+- [Project: Programming with R](https://yaojenkuo.io/rprg_iii/proj_prgwr.html)
 - [Exploring Data with R](https://yaojenkuo.io/rprg_iii/exploring_data#/)
-- [Project: Exploratory Data Analysis](https://yaojenkuo.io/rprg_iii/proj_edawr#/)
+- [Project: Exploratory Data Analysis](https://yaojenkuo.io/rprg_iii/proj_edawr.html)
 
 ### 課程投影片（pdf）
 
