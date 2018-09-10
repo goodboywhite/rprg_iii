@@ -1,7 +1,12 @@
 ---
 title: "Exploring Data with R"
 author: "Tony Yao-Jen Kuo"
-output: beamer_presentation
+output:
+  revealjs::revealjs_presentation:
+    highlight: pygments
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
 ---
 
 ```{r include=FALSE}
@@ -19,17 +24,20 @@ knitr::opts_chunk$set(results = "hold", message = FALSE)
 
 ## We are gonna talk about 3 packages
 
-- `gapminder` for data
-- `dplyr`
-- `ggplot2`
+- `gapminder` for a data gapminder
+- `dplyr` for grammar of data manipulation
+- `ggplot2` for grammar of graphics
 
 # gapminder
 
 ## Getting data
 
+```{r eval=FALSE}
+install.packages("gapminder")
+```
+
 ```{r}
-file_url <- "https://storage.googleapis.com/learn_pd_like_tidyverse/gapminder.csv"
-gap_minder <- read.csv(file_url, stringsAsFactors = FALSE)
+library(gapminder)
 ```
 
 ## The story of Hans Rosling and Gapminder
@@ -58,14 +66,14 @@ install.packages("dplyr")
 ```{r}
 library(dplyr)
 
-gap_minder %>% 
+gapminder %>% 
   filter(country == "Taiwan")
 ```
 
 ## `select()` for extracting columns
 
 ```{r}
-gap_minder %>%
+gapminder %>%
   filter(country == "Taiwan") %>% 
   select(year, gdpPercap, lifeExp)
 ```
@@ -73,7 +81,7 @@ gap_minder %>%
 ## `arrange()` for sorting
 
 ```{r}
-gap_minder %>% 
+gapminder %>% 
   filter(continent == "Asia") %>% 
   filter(year == 2007) %>% 
   arrange(gdpPercap)
@@ -82,7 +90,7 @@ gap_minder %>%
 ## `mutate()` for creating new columns
 
 ```{r}
-gap_minder %>% 
+gapminder %>% 
   filter(country == "Taiwan") %>% 
   mutate(gdp_million = (gdpPercap * pop / 1000000))
 ```
@@ -90,14 +98,14 @@ gap_minder %>%
 ## `summarise()` for...a summary
 
 ```{r}
-gap_minder %>% 
+gapminder %>% 
   summarise(median(gdpPercap))
 ```
 
 ## `group_by()` for a grouped summary
 
 ```{r}
-gap_minder %>% 
+gapminder %>% 
   group_by(continent) %>% 
   summarise(medianGdpPercap = median(gdpPercap))
 ```
@@ -131,7 +139,7 @@ Making a scatter plot
 ```{r}
 library(ggplot2)
 
-gap_minder %>% 
+gapminder %>% 
   ggplot(aes(x = gdpPercap, y = lifeExp)) +
   geom_point()
 ```
@@ -139,7 +147,7 @@ gap_minder %>%
 ## `geom_histogram()` for exploring distributions
 
 ```{r}
-gap_minder %>% 
+gapminder %>% 
   ggplot(aes(x = gdpPercap)) +
   geom_histogram(bins = 40)
 ```
@@ -147,7 +155,7 @@ gap_minder %>%
 ## `geom_bar()` for exploring row counts
 
 ```{r}
-gap_minder %>% 
+gapminder %>% 
   filter(year == 2007) %>%
   ggplot(aes(x = continent)) +
   geom_bar()
@@ -156,7 +164,7 @@ gap_minder %>%
 ## `geom_bar()` for grouped summary
 
 ```{r}
-gap_minder %>% 
+gapminder %>% 
   filter(year == 2007) %>% 
   group_by(continent) %>% 
   summarise(medianGdpPercap = median(gdpPercap)) %>% 
@@ -180,9 +188,9 @@ install.packages("plotly")
 
 ```{r eval=FALSE}
 library(plotly)
-radius <- sqrt((gap_minder$pop)/pi)
+radius <- sqrt((gapminder$pop)/pi)
 
-p <- gap_minder %>%
+p <- gapminder %>%
   plot_ly(
     x = ~gdpPercap, 
     y = ~lifeExp, 

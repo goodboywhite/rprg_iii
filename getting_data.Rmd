@@ -84,7 +84,7 @@ class(chicago_bulls)
 |------|------|
 |CSV|`data.frame`|
 |TXT|`data.frame`|
-|Spreadsheet|`data.frame|
+|Spreadsheet|`data.frame`|
 |JSON|`list`|
 
 # Getting data from web
@@ -174,14 +174,51 @@ html_doc %>%
   as.numeric()
 ```
 
+## How to locate elements?
+
+>- By CSS Selectors
+>- By XPath
+
+# The use of Chrome plugins
+
+## SelectorGadget
+
+A Chrome plugin for CSS selectors:  [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb)
+
+## How to use SelectorGadget?
+
+## XPath Helper
+
+A Chrome plugin for XPath: [XPath Helper](https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl)
+
+## How to use XPath Helper?
+
 ## Practices: Getting genre information from IMDB.com
 
 ```{r}
-genre_css <- ".subtext a+ a , .subtext a:nth-child(4)"
+mi_url <- "https://www.imdb.com/title/tt4912910/"
+```
+
+```{r echo=FALSE}
+html_doc %>% 
+  html_nodes(".subtext a") %>% 
+  html_text() %>% 
+  `[` (-4)
 ```
 
 ## Practices: Getting cast information from IMDB.com
 
 ```{r}
-cast_css <- ".primary_photo+ td a"
+mi_url <- "https://www.imdb.com/title/tt4912910/"
 ```
+
+```{r echo=FALSE}
+html_doc %>% 
+  html_nodes(".primary_photo+ td a") %>% 
+  html_text()
+```
+
+## Practices: Getting price ranking from Yahoo! Stock
+
+- Top 100 for TSE: <https://tw.stock.yahoo.com/d/i/rank.php?t=pri&e=tse&n=100>
+- Top 100 for OTC: <https://tw.stock.yahoo.com/d/i/rank.php?t=pri&e=otc&n=100>

@@ -568,7 +568,11 @@ chicago_bulls &lt;-<span class="st"> </span><span class="kw">fromJSON</span>(fil
 </tr>
 <tr class="odd">
 <td>Spreadsheet</td>
-<td><code>data.frame| |JSON|</code>list`</td>
+<td><code>data.frame</code></td>
+</tr>
+<tr class="even">
+<td>JSON</td>
+<td><code>list</code></td>
 </tr>
 </tbody>
 </table>
@@ -644,12 +648,41 @@ html_doc &lt;-<span class="st"> </span>mi_url <span class="op">%&gt;%</span><spa
 <span class="st">  </span><span class="kw">html_text</span>() <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">as.numeric</span>()</code></pre></div>
 <pre><code>## [1] 8.1</code></pre>
+</section><section id="how-to-locate-elements" class="slide level2">
+<h2>How to locate elements?</h2>
+<ul>
+<li class="fragment">By CSS Selectors</li>
+<li class="fragment">By XPath</li>
+</ul>
+</section></section>
+<section><section id="the-use-of-chrome-plugins" class="titleslide slide level1"><h1>The use of Chrome plugins</h1></section><section id="selectorgadget" class="slide level2">
+<h2>SelectorGadget</h2>
+<p>A Chrome plugin for CSS selectors: <a href="https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb">SelectorGadget</a></p>
+</section><section id="how-to-use-selectorgadget" class="slide level2">
+<h2>How to use SelectorGadget?</h2>
+</section><section id="xpath-helper" class="slide level2">
+<h2>XPath Helper</h2>
+<p>A Chrome plugin for XPath: <a href="https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl">XPath Helper</a></p>
+</section><section id="how-to-use-xpath-helper" class="slide level2">
+<h2>How to use XPath Helper?</h2>
 </section><section id="practices-getting-genre-information-from-imdb.com" class="slide level2">
 <h2>Practices: Getting genre information from IMDB.com</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">genre_css &lt;-<span class="st"> &quot;.subtext a+ a , .subtext a:nth-child(4)&quot;</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mi_url &lt;-<span class="st"> &quot;https://www.imdb.com/title/tt4912910/&quot;</span></code></pre></div>
+<pre><code>## [1] &quot;Action&quot;    &quot;Adventure&quot; &quot;Thriller&quot;</code></pre>
 </section><section id="practices-getting-cast-information-from-imdb.com" class="slide level2">
 <h2>Practices: Getting cast information from IMDB.com</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cast_css &lt;-<span class="st"> &quot;.primary_photo+ td a&quot;</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mi_url &lt;-<span class="st"> &quot;https://www.imdb.com/title/tt4912910/&quot;</span></code></pre></div>
+<pre><code>##  [1] &quot; Tom Cruise\n&quot;        &quot; Henry Cavill\n&quot;      &quot; Ving Rhames\n&quot;      
+##  [4] &quot; Simon Pegg\n&quot;        &quot; Rebecca Ferguson\n&quot;  &quot; Sean Harris\n&quot;      
+##  [7] &quot; Angela Bassett\n&quot;    &quot; Vanessa Kirby\n&quot;     &quot; Michelle Monaghan\n&quot;
+## [10] &quot; Wes Bentley\n&quot;       &quot; Frederick Schmidt\n&quot; &quot; Alec Baldwin\n&quot;     
+## [13] &quot; Liang Yang\n&quot;        &quot; Kristoffer Joner\n&quot;  &quot; Wolf Blitzer\n&quot;</code></pre>
+</section><section id="practices-getting-price-ranking-from-yahoo-stock" class="slide level2">
+<h2>Practices: Getting price ranking from Yahoo! Stock</h2>
+<ul>
+<li>Top 100 for TSE: <a href="https://tw.stock.yahoo.com/d/i/rank.php?t=pri&amp;e=tse&amp;n=100" class="uri">https://tw.stock.yahoo.com/d/i/rank.php?t=pri&amp;e=tse&amp;n=100</a></li>
+<li>Top 100 for OTC: <a href="https://tw.stock.yahoo.com/d/i/rank.php?t=pri&amp;e=otc&amp;n=100" class="uri">https://tw.stock.yahoo.com/d/i/rank.php?t=pri&amp;e=otc&amp;n=100</a></li>
+</ul>
 </section></section>
     </div>
   </div>
