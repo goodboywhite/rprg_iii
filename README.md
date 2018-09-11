@@ -8,6 +8,10 @@
 
 <https://www.sli.do/>
 
+### 作業完成截圖上傳
+
+<https://goo.gl/forms/1WJVwx4o6nkx0ilw1>
+
 ### 課程投影片（html）
 
 - [Getting Started with R](https://yaojenkuo.io/rprg_iii/getting_started#/)
