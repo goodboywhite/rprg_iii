@@ -158,8 +158,6 @@ complete(my_dir, 3)
 
 - Use `cor(x, y, use = "pairwise.complete.obs")` function for correlation coefficient
 
-## Sample output 1
-
 ```{r echo = FALSE}
 corr <- function(directory, threshold = 0) {
   csv_filenames <- list.files(directory)
@@ -189,7 +187,7 @@ corr <- function(directory, threshold = 0) {
 }
 ```
 
-## Sample output 2
+## Sample output 1
 
 ```{r}
 my_dir <- "/Users/kuoyaojen/Downloads/specdata"
@@ -198,7 +196,7 @@ head(cr)
 summary(cr)
 ```
 
-## Sample output 3
+## Sample output 2
 
 ```{r}
 cr <- corr(my_dir, 400)
@@ -206,7 +204,7 @@ head(cr)
 summary(cr)
 ```
 
-## Sample output 4
+## Sample output 3
 
 ```{r}
 cr <- corr(my_dir, 5000)
@@ -214,7 +212,7 @@ summary(cr)
 length(cr)
 ```
 
-## Sample output 5
+## Sample output 4
 
 ```{r}
 cr <- corr(my_dir)
