@@ -15,9 +15,9 @@
 3. [Other Vector types](03-r-essentials-other-vector-types-slides.pdf)
 4. [Vector Manipulation and Other Data Structures](04-r-essentials-vector-manipulation-and-other-data-structures-slides.pdf)
 5. [Functions](05-r-essentials-functions-slides.pdf)
-6. [Getting Data](06-r-essentials-getting-data-slides.pdf)
+6. [Getting Data with R](06-r-essentials-getting-data-slides.pdf)
 7. [Project: Programming with R](07-r-essentials-project-programming-with-r-slides.pdf)
-8. [Exploring Data](08-r-essentials-exploring-data-slides.pdf)
+8. [Exploring Data with R](08-r-essentials-exploring-data-slides.pdf)
 9. [Project: Exploratory Data Analysis with R](09-r-essentials-project-eda-with-r-slides.pdf)
 
 ### 作業
