@@ -4,7 +4,7 @@
 
 這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言及其應用課程網頁，課程時數 24 小時。
 
-### 課堂互動工具（Event Code: 4496）
+### 課堂互動工具（Event Code: S525）
 
 <https://www.sli.do/>
 
