@@ -4,32 +4,41 @@
 
 這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言及其應用課程網頁，課程時數 24 小時。
 
-### 課堂互動工具（Event Code: T962）
+### 課堂互動工具（Event Code: K820）
 
 <https://www.sli.do/>
 
-### 課程投影片（pdf）
+### 課程大綱
 
-1. [Getting Started](01-r-essentials-getting-started-slides.pdf)
-2. [Operators and Basic Vector Types](02-r-essentials-operators-and-basic-vector-types-slides.pdf)
-3. [Other Vector types](03-r-essentials-other-vector-types-slides.pdf)
-4. [Vector Manipulation and Other Data Structures](04-r-essentials-vector-manipulation-and-other-data-structures-slides.pdf)
-5. [Functions](05-r-essentials-functions-slides.pdf)
-6. [Getting Data with R](06-r-essentials-getting-data-slides.pdf)
-7. [Project: Programming with R](07-r-essentials-project-programming-with-r-slides.pdf)
-8. [Exploring Data with R](08-r-essentials-exploring-data-slides.pdf)
-9. [Project: Exploratory Data Analysis with R](09-r-essentials-project-eda-with-r-slides.pdf)
+- 程式設計
 
-### 練習題（Optional）
+    - [關於](https://yaojenkuo.io/r4ds/00-about.slides.html)
+    - [起步走](https://yaojenkuo.io/r4ds/01-getting-started.slides.html)
+    - [運算符與向量](https://yaojenkuo.io/r4ds/02-operators-and-basic-vector-types.slides.html)
+    - [流程控制：條件判斷](https://yaojenkuo.io/r4ds/03-control-flow-conditionals.slides.html)
+    - [流程控制：while 迴圈](https://yaojenkuo.io/r4ds/04-control-flow-while.slides.html)
+    - [向量操作](https://yaojenkuo.io/r4ds/05-vector-manipulation.slides.html)
+    - [流程控制：for 迴圈](https://yaojenkuo.io/r4ds/06-control-flow-for.slides.html)
+    - [其他資料結構](https://yaojenkuo.io/r4ds/07-other-data-structures.slides.html)
+    - [程式封裝：自訂函數](https://yaojenkuo.io/r4ds/08-functions.slides.html)
+
+- 資料科學應用
+    - [資料輸入輸出](https://yaojenkuo.io/r4ds/09-data-io.slides.html)
+    - [資料框處理](https://yaojenkuo.io/r4ds/10-dataframe-manipulation.slides.html)
+    - [資料視覺化](https://yaojenkuo.io/r4ds/11-data-visualization.slides.html)
+    - [網頁爬蟲](https://yaojenkuo.io/r4ds/12-web-scraping.slides.html)
+
+### 作業
 
 - [R 語言導論](https://www.datacamp.com/community/open-courses/r-%E8%AA%9E%E8%A8%80%E5%B0%8E%E8%AB%96?tap_a=5644-dce66f&tap_s=194899-1fb421)
 - [資料框整理技巧](https://www.datacamp.com/community/open-courses/%E8%B3%87%E6%96%99%E6%A1%86%E6%95%B4%E7%90%86%E6%8A%80%E5%B7%A7?tap_a=5644-dce66f&tap_s=194899-1fb421)
 
-<!---
 
 ### 作業上傳表單
 
-<https://goo.gl/forms/qN4fobpGfbSprhs72>
+<https://forms.gle/E1yDs95WM4DfTxyJ9>
+
+<!---
 
 ### 上傳結果
 
@@ -40,5 +49,7 @@
 ### 延伸閱讀
 
 - [輕鬆學習 R 語言](https://www.datainpoint.com/r-essentials/)
-- [Advanced R（Website）](http://adv-r.had.co.nz/)
-- [The Art of R Programming](https://www.amazon.com/Art-Programming-Statistical-Software-Design-ebook/dp/B00683GXUO)
+- [輕鬆學習 R 語言@Medium](https://medium.com/datainpoint/r-essentials/home)
+- [DataCamp](https://www.datacamp.com/courses/tech:python?tap_a=5644-dce66f&tap_s=194899-1fb421)
+- [Advanced R](https://adv-r.hadley.nz/)
+- [R for Data Science](https://r4ds.had.co.nz/)
