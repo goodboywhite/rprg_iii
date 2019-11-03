@@ -1,8 +1,8 @@
-## R 語言及其應用
+## R 語言程式設計及資料科學應用
 
 ### 簡介
 
-這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言及其應用課程網頁，課程時數 24 小時。
+這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言程式設計及資料科學應用網頁，課程時數 24 小時。
 
 ### 課堂互動工具（Event Code: K820）
 
@@ -11,7 +11,6 @@
 ### 課程大綱
 
 - 程式設計
-
     - [關於](https://yaojenkuo.io/r4ds/00-about.slides.html)
     - [起步走](https://yaojenkuo.io/r4ds/01-getting-started.slides.html)
     - [運算符與向量](https://yaojenkuo.io/r4ds/02-operators-and-basic-vector-types.slides.html)
@@ -21,7 +20,6 @@
     - [流程控制：for 迴圈](https://yaojenkuo.io/r4ds/06-control-flow-for.slides.html)
     - [其他資料結構](https://yaojenkuo.io/r4ds/07-other-data-structures.slides.html)
     - [程式封裝：自訂函數](https://yaojenkuo.io/r4ds/08-functions.slides.html)
-
 - 資料科學應用
     - [資料輸入輸出](https://yaojenkuo.io/r4ds/09-data-io.slides.html)
     - [資料框處理](https://yaojenkuo.io/r4ds/10-dataframe-manipulation.slides.html)
@@ -36,7 +34,7 @@
 
 ### 作業上傳表單
 
-<https://forms.gle/E1yDs95WM4DfTxyJ9>
+<https://forms.gle/Vua8tSK5zxy5hoWA8>
 
 <!---
 
