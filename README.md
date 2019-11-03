@@ -36,14 +36,6 @@
 
 <https://forms.gle/Vua8tSK5zxy5hoWA8>
 
-<!---
-
-### 上傳結果
-
-[BDSE10](https://docs.google.com/spreadsheets/d/1SpeXy5qnUvu8rBNKsNRexZvIxFK1fhb5TxguqRIygNQ/edit?usp=sharing)
-
---->
-
 ### 延伸閱讀
 
 - [輕鬆學習 R 語言](https://www.datainpoint.com/r-essentials/)
