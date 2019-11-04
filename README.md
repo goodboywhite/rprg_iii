@@ -38,7 +38,7 @@
 
 ### 延伸閱讀
 
-- [輕鬆學習 R 語言](https://www.datainpoint.com/r-essentials/)
+- [輕鬆學習 R 語言](https://www.books.com.tw/products/0010835361)
 - [輕鬆學習 R 語言@Medium](https://medium.com/datainpoint/r-essentials/home)
 - [DataCamp](https://www.datacamp.com/courses/tech:python?tap_a=5644-dce66f&tap_s=194899-1fb421)
 - [Advanced R](https://adv-r.hadley.nz/)
