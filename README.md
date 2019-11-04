@@ -11,7 +11,7 @@
 ### 課程大綱
 
 - 程式設計
-    - [關於](https://yaojenkuo.io/r4ds/00-about.slides.html)
+    - [關於](https://yaojenkuo.io/00-about.slides.html)
     - [起步走](https://yaojenkuo.io/r4ds/01-getting-started.slides.html)
     - [運算符與向量](https://yaojenkuo.io/r4ds/02-operators-and-basic-vector-types.slides.html)
     - [流程控制：條件判斷](https://yaojenkuo.io/r4ds/03-control-flow-conditionals.slides.html)
