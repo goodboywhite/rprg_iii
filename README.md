@@ -2,7 +2,7 @@
 
 ### 簡介
 
-這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言程式設計及資料科學應用網頁，課程時數 24 小時。
+這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言程式設計及資料科學應用網頁，課程時數 14 小時。
 
 ### 課堂互動工具（Event Code: K820）
 
@@ -25,7 +25,9 @@
     - [資料框處理](https://yaojenkuo.io/r4ds/10-dataframe-manipulation.slides.html)
     - [資料視覺化](https://yaojenkuo.io/r4ds/11-data-visualization.slides.html)
     - [網頁爬蟲](https://yaojenkuo.io/r4ds/12-web-scraping.slides.html)
+    - [基礎統計](https://yaojenkuo.io/r4ds/13-basic-stats.slides.html)
 
+<!--
 ### 作業
 
 - [R 語言導論](https://www.datacamp.com/community/open-courses/r-%E8%AA%9E%E8%A8%80%E5%B0%8E%E8%AB%96?tap_a=5644-dce66f&tap_s=194899-1fb421)
@@ -35,11 +37,12 @@
 ### 作業上傳表單
 
 <https://forms.gle/Vua8tSK5zxy5hoWA8>
+-->
 
 ### 延伸閱讀
 
-- [輕鬆學習 R 語言](https://www.books.com.tw/products/0010835361)
-- [輕鬆學習 R 語言@Medium](https://medium.com/datainpoint/r-essentials/home)
-- [DataCamp](https://www.datacamp.com/courses/tech:python?tap_a=5644-dce66f&tap_s=194899-1fb421)
+- [DataCamp](https://www.datacamp.com?tap_a=5644-dce66f&tap_s=194899-1fb421&utm_medium=affiliate&utm_source=tonykuo)
 - [Advanced R](https://adv-r.hadley.nz/)
 - [R for Data Science](https://r4ds.had.co.nz/)
+- [輕鬆學習 R 語言](https://www.books.com.tw/products/0010835361)
+- [輕鬆學習 R 語言@DataInPoint](https://www.datainpoint.com/r-essentials/)
