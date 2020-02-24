@@ -27,12 +27,13 @@
     - [網頁爬蟲](https://yaojenkuo.io/r4ds/12-web-scraping.slides.html)
     - [基礎統計](https://yaojenkuo.io/r4ds/13-basic-stats.slides.html)
 
+
+### 互動式練習題
+
+- [R 語言導論](https://www.datacamp.com/community/open-courses/r-%E8%AA%9E%E8%A8%80%E5%B0%8E%E8%AB%96?tap_a=5644-dce66f&tap_s=194899-1fb421&utm_medium=affiliate&utm_source=tonykuo)
+- [資料框整理技巧](https://www.datacamp.com/community/open-courses/%E8%B3%87%E6%96%99%E6%A1%86%E6%95%B4%E7%90%86%E6%8A%80%E5%B7%A7?tap_a=5644-dce66f&tap_s=194899-1fb421&utm_medium=affiliate&utm_source=tonykuo)
+
 <!--
-### 作業
-
-- [R 語言導論](https://www.datacamp.com/community/open-courses/r-%E8%AA%9E%E8%A8%80%E5%B0%8E%E8%AB%96?tap_a=5644-dce66f&tap_s=194899-1fb421)
-- [資料框整理技巧](https://www.datacamp.com/community/open-courses/%E8%B3%87%E6%96%99%E6%A1%86%E6%95%B4%E7%90%86%E6%8A%80%E5%B7%A7?tap_a=5644-dce66f&tap_s=194899-1fb421)
-
 
 ### 作業上傳表單
 
