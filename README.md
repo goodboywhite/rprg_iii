@@ -41,7 +41,7 @@
 
 ### 延伸閱讀
 
-- [DataCamp](https://www.datacamp.com?tap_a=5644-dce66f&tap_s=194899-1fb421&utm_medium=affiliate&utm_source=tonykuo)
+- [DataCamp](https://www.datacamp.com/learn/r-programming?tap_a=5644-dce66f&tap_s=194899-1fb421&utm_medium=affiliate&utm_source=tonykuo)
 - [Advanced R](https://adv-r.hadley.nz/)
 - [R for Data Science](https://r4ds.had.co.nz/)
 - [輕鬆學習 R 語言](https://www.books.com.tw/products/0010835361)
