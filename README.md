@@ -4,6 +4,8 @@
 
 這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在資策會所開的 R 語言程式設計及資料科學應用網頁，課程時數 18 小時。
 
+Contact me: <tonykuoyj@gmail.com>
+
 ### 課堂互動工具（Event Code: K820）
 
 <https://www.sli.do/>
@@ -35,7 +37,7 @@
 
 ### 作業上傳表單
 
-<https://forms.gle/ztimUzh9RQJQSFhu7>
+<https://forms.gle/ztimUzh9RQJQSFhu7> 2020/3/19 00:00 前上傳。
 
 ### 延伸閱讀
 
